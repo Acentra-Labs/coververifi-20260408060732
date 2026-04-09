@@ -8,7 +8,7 @@ import ComplianceBar from '../components/shared/ComplianceBar';
 import StatusBadge from '../components/shared/StatusBadge';
 import SearchInput from '../components/shared/SearchInput';
 import Modal from '../components/shared/Modal';
-import { getComplianceStats, getComplianceBarSegments, sortByComplianceUrgency } from '../utils/compliance';
+import { getComplianceStats, getComplianceBarSegments } from '../utils/compliance';
 import { validateRequired, validateEmail, validatePhone } from '../utils/validators';
 
 export default function ConsultantDashboard() {

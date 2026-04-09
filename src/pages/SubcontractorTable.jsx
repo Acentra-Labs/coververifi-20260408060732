@@ -6,7 +6,7 @@ import StatusBadge from '../components/shared/StatusBadge';
 import ComplianceBar from '../components/shared/ComplianceBar';
 import SearchInput from '../components/shared/SearchInput';
 import { getComplianceStats, getComplianceBarSegments, sortByComplianceUrgency, daysUntilExpiration } from '../utils/compliance';
-import { formatDate, formatCurrency, formatPolicyType } from '../utils/formatters';
+import { formatDate, formatCurrency } from '../utils/formatters';
 
 export default function SubcontractorTable() {
   const { gcId } = useParams();

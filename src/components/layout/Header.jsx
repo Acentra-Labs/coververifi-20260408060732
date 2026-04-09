@@ -80,7 +80,11 @@ export default function Header({ onMenuToggle }) {
                   notifications.map((n) => (
                     <button
                       key={n.id}
-                      onClick={() => { markNotificationRead(n.id); setShowNotifs(false); }}
+                      onClick={() => {
+                        markNotificationRead(n.id);
+                        setShowNotifs(false);
+                        if (n.sub_id) navigate(`/sub/${n.sub_id}`);
+                      }}
                       className={`w-full text-left px-4 py-3 border-b border-slate-50 hover:bg-slate-50 transition-colors ${
                         !n.read ? 'bg-teal-50/50' : ''
                       }`}
